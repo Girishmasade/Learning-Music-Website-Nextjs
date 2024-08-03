@@ -10,7 +10,6 @@ import React from 'react'
 function page() {
   return (
     <div className='min-h-screen bg-black/[0.96] antialiased bg-grid-white/[0.02]'>
-      <h1 className='text-2xl text-center py-1'>This is a Nextjs</h1>
       <HeroSection/>
       <FeaturedCourses/>
       <WhyChooseUs/>
