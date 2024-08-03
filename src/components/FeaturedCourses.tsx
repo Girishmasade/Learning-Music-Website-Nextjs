@@ -2,6 +2,7 @@
 import Link from "next/link";
 import CourseData from "../data/music_courses.json";
 import { BackgroundGradient } from "./ui/background-gradient";
+import { HoverBorderGradient } from "./ui/hover-border-gradient";
 
 interface Courses {
   id: number;
@@ -51,13 +52,19 @@ function FeaturedCourses() {
         </div>
       </div>
 
-      <div className="mt-20 text-center">
+      <div className="mt-20 m-40 flex justify-center text-center">
+      <HoverBorderGradient
+        containerClassName="rounded-full"
+        as="button"
+        className="dark:bg-black bg-white text-black dark:text-white flex items-center space-x-2"
+      >
         <Link
           href={"/courses"}
-          className="px-4 py-2 rounded border border-neutral-600 text-neutral-700 bg-white hover:bg-gray-100 transition duration-200"
+          className="px-4 py-2 text-neutral-700 hover:text-gray-100 transition duration-200"
         >
           View All courses
         </Link>
+        </HoverBorderGradient>
       </div>
     </div>
   );
