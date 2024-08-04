@@ -1,6 +1,46 @@
 "use client";
 import React from "react";
 import { BackgroundBeams } from "@/components/ui/background-beams";
+import { CardSpotlight } from "@/components/ui/card-spotlight";
+
+const Learning = [
+  {
+    id: 1,
+    title: 'Formal Music Education',
+    desc: 'Structured learning through institutions (e.g., music schools, conservatories).',
+    pros: 'Professional instructors, comprehensive curriculum, certifications.',
+    cons: 'Costly, requires time commitment.',
+  }, 
+  {
+    id: 2,
+    title: 'Private Lessons',
+    desc: 'One-on-one instruction with a music teacher.',
+    pros: 'Personalized feedback, tailored lessons, flexible scheduling.',
+    cons: 'Can be expensive, dependent on the teacher’s availability.',
+  }, 
+  {
+    id: 3,
+    title: 'Online Courses',
+    desc: 'Digital platforms offering music lessons and resources.',
+    pros: 'Accessible anywhere, often more affordable, variety of resources.',
+    cons: 'Less personal interaction, can be overwhelming to choose from.',
+  }, 
+  {
+    id: 4,
+    title: 'Self-Teaching',
+    desc: 'Learning through books, videos, and practice on your own.',
+    pros: 'Flexible pace, cost-effective, encourages independence.',
+    cons: 'No direct feedback, potential for developing bad habits.',
+  }, 
+  {
+    id: 5,
+    title: 'Group Classes/Workshops',
+    desc: 'Learning in a group setting with peers.',
+    pros: 'Social interaction, collaborative learning, often more affordable.',
+    cons: 'Less personalized attention, varying skill levels within the group.',
+  }, 
+]
+
 function page() {
   return (
     <div className="bg-neutral-950">
@@ -32,7 +72,27 @@ function page() {
             journey, and we're here to support you every step of the way.
           </p>
         </div>
-        
+        <div className="py-5 mt-10 mx-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
+             {Learning.map((index) => (
+                 <CardSpotlight className="h-76 w-96">
+                 <div key={index.id} className="p-2 m-2">
+                   <div className="card">
+                     <h4 className="text-xl py-2 text-red-200	">{index.title}</h4>
+                     <p>{index.desc}</p>
+                     <div className="py-4">
+                     <ul className="my-2">
+                       <li className="py-2">Pros: {index.pros}</li>
+                       <li className="py-4">Cons: {index.cons}</li>
+                     </ul>
+                     </div>
+                   </div>
+                 </div>
+                 </CardSpotlight>
+             ))
+             }
+            </div>
+        </div>
       </div>
     </div>
   );
