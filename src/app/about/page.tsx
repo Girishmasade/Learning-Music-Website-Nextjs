@@ -72,11 +72,11 @@ function page() {
             journey, and we're here to support you every step of the way.
           </p>
         </div>
-        <div className="py-5 mt-10 mx-8">
+        <div className="mx-8 mt-10">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
              {Learning.map((index) => (
                  <CardSpotlight className="h-76 w-96">
-                 <div key={index.id} className="p-2 m-2">
+                 <div key={index.id}>
                    <div className="card">
                      <h4 className="text-xl py-2 text-red-200	">{index.title}</h4>
                      <p>{index.desc}</p>
