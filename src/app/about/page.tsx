@@ -75,7 +75,7 @@ function page() {
         <div className="mx-8 mt-10">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
              {Learning.map((index) => (
-                 <CardSpotlight className="h-76 w-96">
+                 <CardSpotlight className="h-76 md:w-auto">
                  <div key={index.id}>
                    <div className="card">
                      <h4 className="text-xl py-2 text-red-200	">{index.title}</h4>
