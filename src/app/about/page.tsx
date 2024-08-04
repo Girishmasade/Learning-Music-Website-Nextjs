@@ -5,35 +5,35 @@ import { CardSpotlight } from "@/components/ui/card-spotlight";
 
 const Learning = [
   {
-    id: 1,
+    id: '1',
     title: 'Formal Music Education',
     desc: 'Structured learning through institutions (e.g., music schools, conservatories).',
     pros: 'Professional instructors, comprehensive curriculum, certifications.',
     cons: 'Costly, requires time commitment.',
   }, 
   {
-    id: 2,
+    id: '2',
     title: 'Private Lessons',
     desc: 'One-on-one instruction with a music teacher.',
     pros: 'Personalized feedback, tailored lessons, flexible scheduling.',
-    cons: 'Can be expensive, dependent on the teacher’s availability.',
+    cons: 'Can be expensive, dependent on the teachers availability.',
   }, 
   {
-    id: 3,
+    id: '3',
     title: 'Online Courses',
     desc: 'Digital platforms offering music lessons and resources.',
     pros: 'Accessible anywhere, often more affordable, variety of resources.',
     cons: 'Less personal interaction, can be overwhelming to choose from.',
   }, 
   {
-    id: 4,
+    id: '4',
     title: 'Self-Teaching',
     desc: 'Learning through books, videos, and practice on your own.',
     pros: 'Flexible pace, cost-effective, encourages independence.',
     cons: 'No direct feedback, potential for developing bad habits.',
   }, 
   {
-    id: 5,
+    id: '5',
     title: 'Group Classes/Workshops',
     desc: 'Learning in a group setting with peers.',
     pros: 'Social interaction, collaborative learning, often more affordable.',
@@ -52,7 +52,7 @@ function page() {
           <p></p>
           <p className="text-neutral-500 max-w-lg mx-auto my-2 text-sm text-center relative z-10">
             At Join the Way of Music, we believe that music is more than just a
-            series of notes—it's a universal language that connects, inspires,
+            series of notes—it is a universal language that connects, inspires,
             and transforms lives. Our mission is to create a vibrant community
             where musicians of all levels can come together to learn, share, and
             grow.
@@ -64,19 +64,19 @@ function page() {
         <div className="text-center px-6">
           <h1 className="text-lg md:text-7xl  bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600  text-center font-sans font-bold">Who We Are</h1>
           <p className="text-neutral-500 max-w-2xl mx-auto my-2 text-sm text-center">
-            We’re a passionate group of musicians, educators, and enthusiasts
+            Were a passionate group of musicians, educators, and enthusiasts
             who are dedicated to fostering a love for music in every person we
-            reach. Whether you’re a budding artist, a seasoned performer, or
+            reach. Whether you are a budding artist, a seasoned performer, or
             someone who simply loves to listen, our platform is designed with
             you in mind. We understand the joys and challenges of the musical
-            journey, and we're here to support you every step of the way.
+            journey, and we are here to support you every step of the way.
           </p>
         </div>
         <div className="mx-8 mt-10">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
              {Learning.map((index) => (
-                 <CardSpotlight className="h-76 md:w-auto">
-                 <div key={index.id}>
+                 <CardSpotlight key={index.id} className="h-76 md:w-auto">
+                 <div>
                    <div className="card">
                      <h4 className="text-xl py-2 text-red-200	">{index.title}</h4>
                      <p>{index.desc}</p>
