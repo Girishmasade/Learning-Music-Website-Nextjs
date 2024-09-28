@@ -1,5 +1,7 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+This project is a music learning platform built using Next.js. It features a sleek and responsive design to help users access music lessons, tutorials, and resources. The website leverages the power of Next.js for fast, server-side rendered pages and efficient routing. It includes dynamic content, user authentication, and a structured course section to help users learn various musical instruments. The site is optimized for both desktop and mobile devices, ensuring an engaging experience for all users.
+
 ## Getting Started
 
 First, run the development server:
